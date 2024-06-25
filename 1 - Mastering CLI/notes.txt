@@ -1,0 +1,28 @@
+Creating a Directory/Folder
+mkdir [directory/folder_name]
+
+Clear the Terminal
+clear
+
+Remove a Directory/Folder
+rmdir [directory_name]
+
+Print/present the current directory
+pwd
+
+List Command
+ls
+
+Change Directories
+cd [directory_path]
+
+Go back one directory
+cd ..
+
+Create file
+touch [file_name.extension]
+
+Remove file
+rm [file_name.extension]
+
+git config --global user.name "romanbuvanov"
