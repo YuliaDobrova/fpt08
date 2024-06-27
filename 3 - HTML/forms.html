@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML forms</title>
+  </head>
+  <body>
+    <!-- Form is used to collect user input -->
+    <h1>Sample Form</h1>
+    <form>
+      <!-- Name -->
+      <div>
+        <label for="fullname">Full Name:</label>
+        <input
+          type="text"
+          name="fullname"
+          id="fullname"
+          placeholder="Type your name"
+          required
+        />
+      </div>
+      <br />
+      <!-- Email -->
+      <div>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="ferdsron@email.com"
+          required
+        />
+      </div>
+      <br />
+      <!-- Password -->
+      <div>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="8-16 characters"
+          required
+        />
+      </div>
+      <br />
+      <!-- Age -->
+      <div>
+        <label for="age">Age:</label>
+        <input
+          type="number"
+          name="age"
+          id="age"
+          placeholder="36"
+          required
+          min="10"
+          max="60"
+        />
+      </div>
+      <br />
+      <!-- Message -->
+      <div>
+        <label for="message">Message:</label>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Type your message here."
+          cols="50"
+          rows="5"
+          maxlength="50"
+          style="resize: none"
+        ></textarea>
+      </div>
+      <br />
+      <!-- Dropdown / Select -->
+      <div>
+        <label for="favorite-food">Favorite Food:</label>
+        <select name="favorite-food" id="favorite-food">
+          <option value="none" selected disabled hidden>
+            --- Select your food ---
+          </option>
+          <option value="Burgers">Burgers</option>
+          <option value="Fries">Fries</option>
+          <option value="Pizza">Pizza</option>
+          <option value="Pasta">Pasta</option>
+        </select>
+      </div>
+      <br />
+
+      <!-- Radio and Checkbox -->
+      <div>
+        <input type="radio" name="profile-status" id="public" value="public" />
+        <label for="public">Public</label>
+
+        <input
+          type="radio"
+          name="profile-status"
+          id="private"
+          value="private"
+        />
+        <label for="private">Private</label>
+      </div>
+      <br />
+
+      <div>
+        <input type="checkbox" name="genre" id="action" value="action" />
+        <label for="action">Action</label>
+        <input type="checkbox" name="genre" id="comedy" value="comedy" />
+        <label for="comedy">Comedy</label>
+        <input type="checkbox" name="genre" id="romance" value="romance" />
+        <label for="romance">Romance</label>
+      </div>
+      <br />
+
+      <input type="file" name="" id="" />
+
+      <!-- Button -->
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

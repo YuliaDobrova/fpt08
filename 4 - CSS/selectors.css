@@ -1,0 +1,14 @@
+/* Element Selector */
+span {
+  color: coral;
+}
+
+/* Class Selector */
+.class-name {
+  color: yellow;
+}
+
+/* ID Selector */
+#id-name {
+  color: turquoise;
+}
