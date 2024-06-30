@@ -1,0 +1,50 @@
+/* 4 Components of the Box Model
+- Content
+- Padding
+- Border
+- Margin
+*/
+
+/* Padding */
+.box1 {
+  padding-left: 10px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.box2 {
+  /* 
+    1 value = all sides
+    2 values = top and bottom || left and right
+    3 values = top || left and right || bottom
+    4 values = top || right || bottom || left
+    */
+  padding: 10px 20px 30px 40px;
+}
+
+/* Margin */
+.box3 {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.box4 {
+  /* 
+    1 value = all sides
+    2 values = top and bottom || left and right
+    3 values = top || left and right || bottom
+    4 values = top || right || bottom || left
+    */
+  margin: 10px 20px 30px 40px;
+}
+
+.mix-borders {
+  border-style: dotted solid dashed double;
+}
+.circle-container {
+  height: 60px;
+  width: 60px;
+  border-style: solid;
+  border-radius: 50%;
+}

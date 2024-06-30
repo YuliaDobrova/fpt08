@@ -1,0 +1,40 @@
+/* color values */
+.color-example {
+  color: red;
+  background-color: aliceblue;
+}
+.background-example {
+  background-color: #ff000f;
+}
+/* background colors and images */
+.background-example {
+  background-color: #ff000f;
+}
+/* background position and repeating */
+.background-position-example {
+  background-image: url(background.jpg);
+  background-position: center top;
+  background-size: cover;
+  color: white;
+  background-repeat: no-repeat;
+}
+/* Opacity and Transparency */
+.opacity-example {
+  background-color: rgba(225, 0, 0, 0.3);
+}
+
+/* Adding Images to Web Pages */
+.image-example {
+  display: block;
+  margin: 0 auto;
+}
+.image-sizing-example {
+  width: 200px;
+  height: auto;
+}
+
+/* block - takes up the full width, can change width and height
+
+inline - takes up only as much space as necessary for content, cannot change width and height
+
+inline-block - takes up only as much space as necessary for content, but can change width and height */

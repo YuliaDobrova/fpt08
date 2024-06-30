@@ -1,14 +1,84 @@
+body {
+  background-color: black;
+  color: white;
+}
 /* Element Selector */
 span {
   color: coral;
+}
+p {
+  color: green;
 }
 
 /* Class Selector */
 .class-name {
   color: yellow;
 }
+.class-name.roma {
+  color: blueviolet;
+}
 
 /* ID Selector */
 #id-name {
   color: turquoise;
+}
+
+/* Universal Selector */
+/* is easily overriden  */
+* {
+  color: green;
+}
+
+/* Attribute Selector */
+/* targetting specific elements with the href attribute */
+h3[href] {
+  color: plum;
+}
+/* target elements with the href attribute */
+[href] {
+  color: white;
+  background-color: brown;
+}
+/* targetting a specific element with a specific attribute value */
+h3[href="www.example.com"] {
+  color: tomato;
+}
+/* h3[href] = h3 tags with href attribute
+[href] = any tag with href attribute
+
+With CSS, they prioritize more specific blocks 😄, and rule 1 is more specific than rule 2 (h3 VS any) */
+
+/* Hierarchy of Specificity:
+ID - most specific of all
+Classname - 2nd most specific, but can refer to multiple elements
+tag name - not very specific
+* - every element, not specific at all */
+/* Grouping Selector */
+h1,
+h2,
+.parag {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Descendant Selector */
+div h3 {
+  color: chartreuse;
+}
+.ancestor h3 {
+  color: chartreuse;
+}
+/* Pseudo-classes */
+button:hover {
+  background-color: black;
+  color: white;
+}
+/* pseudo-elements: elements that aren't in the html, but we would like to add in via CSS
+pseudo-class: change the style depending on the behavior of the element */
+
+/* Pseudo-element (::)*/
+#pseudo-element::after {
+  content: "Placed after h3";
+}
+#pseudo-element::first-letter {
+  color: salmon;
 }

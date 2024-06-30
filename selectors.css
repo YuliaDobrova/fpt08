@@ -1,0 +1,14 @@
+.relative {
+  /* relative to its original position */
+  position: relative;
+  top: 100px;
+  left: 200px;
+  background-color: blue;
+  color: white;
+}
+.absolute {
+  /* relative to its nearest ancestor */
+  position: absolute;
+  top: 150px;
+  background-color: crimson;
+}

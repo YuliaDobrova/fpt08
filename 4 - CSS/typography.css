@@ -1,0 +1,38 @@
+/* Formatting */
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+.underline {
+  text-decoration: underline;
+}
+.line-through {
+  text-decoration: line-through;
+}
+/* Text Alignment */
+.center-align {
+  text-align: center;
+}
+.line-height {
+  line-height: 2;
+}
+.letter-spacing {
+  letter-spacing: 5px;
+}
+.text-shadow {
+  /* 
+    1st value - horizontal value
+    2nd value - vertical value
+    3rd value - blur effect
+    4th value - color
+     */
+  text-shadow: 20px 20px 4px rgba(0, 0, 0, 0.8);
+  /* 
+    r - red
+    g - green
+    b - blue
+    a - alpha (opacity)
+     */
+}
