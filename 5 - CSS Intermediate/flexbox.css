@@ -1,0 +1,61 @@
+/*  Apply flexbox layout to the container */
+.flexContainer {
+  display: flex;
+  /* default value */
+  flex-direction: row;
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+
+  justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-between;
+  justify-content: space-around;
+  justify-content: space-evenly;
+
+  /* Make flex items stretch to fill the container along cross axis*/
+  align-items: flex-start;
+  /* align-items: stretch; */
+  /* align-items: center; */
+  /* align-items: flex-end; */
+
+  /* Allow flex items to wrap onto multiple lines */
+  flex-wrap: wrap;
+  /* flex-wrap: nowrap; */
+  /* flex-wrap: wrap-reverse; */
+
+  column-gap: 50px;
+  row-gap: 150px;
+}
+
+/* Adjust one item only */
+.flexItem2 {
+  align-self: flex-start;
+  align-self: flex-end;
+  align-self: center;
+}
+
+/* Flex Grow - willingness to grow */
+.flexItem1 {
+  flex-grow: 0;
+}
+.flexItem2 {
+  flex-grow: 2;
+}
+.flexItem3 {
+  /* the bigger the value, the faster it will grow */
+  flex-grow: 1;
+}
+
+/* Flex Shrink -willingness to shrink */
+.flexItem1 {
+  flex-shrink: 2;
+}
+.flexItem2 {
+  flex-shrink: 0;
+}
+.flexItem3 {
+  /* the bigger the value, the faster it will grow */
+  flex-grow: 1;
+}

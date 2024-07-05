@@ -1,0 +1,75 @@
+/* Using px */
+.gridContainer {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+}
+
+/* Using auto */
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+/* Using percentage */
+.gridContainer {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+/* Using fr (fraction) */
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* DRY - Don't Repeat Yourself */
+/* using "repeat(<first argument: # columns | 2nd argument: size value of each column)" - better to use especially if we are creating multiple columns */
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+/* Column / Row Gaps */
+.gridContainer {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+/* Grid Area */
+/* 
+    1st value = row-start
+    2nd value = column start
+    3rd value = row end
+    4th value = column end
+*/
+/* 
+    Step1 : Identify the cell that we want to move
+    Step2: Adjust the grid area
+*/
+.gridItem1 {
+  grid-area: 2 / 2 / 4 / 4;
+}
+
+/* Media queries */
+/*
+      Mobile Devices: Less than 481px
+      iPads, Tablets: 481px - 768px
+      Small Screens, Laptops: 769px - 1024px
+      Desktops, Large Screens: 1025px - 1200px
+      Extra Large Screens, TV: 1201px and greater
+  */
+
+/* Media Query for Large Screens */
+@media screen and (min-width: 1025px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,14 +1,21 @@
 .relative {
   /* relative to its original position */
   position: relative;
-  top: 100px;
-  left: 200px;
+  top: 10px;
+  left: 0px;
   background-color: blue;
   color: white;
 }
 .absolute {
   /* relative to its nearest ancestor */
   position: absolute;
-  top: 150px;
+  top: 10px;
+  left: 0px;
   background-color: crimson;
+}
+.sticky {
+  /* it's a mix of relative and fixed */
+  position: sticky;
+  background-color: coral;
+  top: 0px;
 }
